@@ -46,3 +46,23 @@ document.addEventListener("DOMContentLoaded", function () {
     form.reset();
   });
 });
+<script>
+  function searchContent() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const services = [
+      "oil change",
+      "brake check",
+      "battery service",
+      "tire replacement",
+      "emergency mechanic"
+    ];
+
+    const matched = services.filter(service => service.includes(input));
+
+    if (matched.length > 0) {
+      alert("✅ Found: " + matched.join(", "));
+    } else {
+      alert("❌ No results found.");
+    }
+  }
+</script>
