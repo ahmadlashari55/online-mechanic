@@ -112,4 +112,16 @@ footer {
     text-align: center;
   }
 }
+.mechanic {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 500px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+textarea {
+  padding: 10px;
+  resize: vertical;
+}
 

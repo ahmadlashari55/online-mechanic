@@ -1,1 +1,57 @@
-contact.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="book.html">Book Now</a>
+      <a href="mechanics.html">Mechanics</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>We’d love to hear from you!</h2>
+    <form id="contactForm">
+      <label for="username">Your Name:</label>
+      <input type="text" id="username" required />
+
+      <label for="useremail">Email Address:</label>
+      <input type="email" id="useremail" required />
+
+      <label for="usermessage">Message:</label>
+      <textarea id="usermessage" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div id="contactConfirmation" style="display: none;">
+      <h3>📨 Message Sent!</h3>
+      <p>We’ll respond to your query soon.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Online Mechanic. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    const confirmation = document.getElementById("contactConfirmation");
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      confirmation.style.display = "block";
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
