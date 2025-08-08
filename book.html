@@ -1,83 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book a Mechanic | Car & Bike Service Online</title>
-<meta name="description" content="Fill out the form to book a professional mechanic at your home for any vehicle issue.">
-
-  <meta name="keywords" content="mechanic service, car repair, bike repair, online booking, emergency mechanic, Pakistan">
-  <meta name="author" content="Sukoon Mechanics">
-
-  <!-- Social Media Preview -->
-  <meta property="og:title" content="Online Mechanic Service | Book Car or Bike Repair">
-  <meta property="og:description" content="Book trusted mechanics for car and bike repairs at your doorstep.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourwebsite.netlify.app">
-  <meta property="og:image" content="https://yourwebsite.netlify.app/images/preview.jpg">
-
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book your car service appointment online. Quick, easy, and hassle-free booking for engine repair, oil change, brake service, and more.">
+  <meta name="keywords" content="Car Service, Online Booking, Engine Repair, Oil Change, Brake Service, Mechanic">
+  <meta name="author" content="Car Service Booking">
+  <title>Book a Service</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
-  <h1 data-en="Online Mechanic Booking" >Online Mechanic Booking</h1>
-  <nav>
-    <a href="index.html" data-en="Home" >Home</a>
-    <a href="services.html" data-en="Services" >Services</a>
-    <a href="book.html" data-en="Book Now" >Book Now</a>
-    <a href="mechanics.html" data-en="Mechanics" >Mechanics</a>
-    <a href="contact.html" data-en="Contact" >Contact</a>
-  </nav>
-
-  <!-- 🔍 Search Bar -->
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search services..." />
-    <button onclick="searchContent()">🔍</button>
-  </div>
-</header>
+    <h1>Book a Service</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="book.html">Book Now</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <main>
-    <h2>Book Your Car or Bike Service</h2>
-    <form id="bookingForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required />
+    <h2>Fill in Your Booking Details</h2>
+    <form action="confirmation.html" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" required />
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
 
-      <label for="vehicle">Vehicle Type:</label>
-      <select id="vehicle" required>
-        <option value="">Select</option>
-        <option value="car">Car</option>
-        <option value="bike">Bike</option>
-      </select>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email">
 
-      <label for="service">Service Type:</label>
-      <select id="service" required>
-        <option value="">Choose a service</option>
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select --</option>
+        <option value="engine">Engine Repair</option>
         <option value="oil">Oil Change</option>
-        <option value="brakes">Brake Check</option>
-        <option value="battery">Battery Service</option>
-        <option value="tire">Tire Replacement</option>
-        <option value="emergency">Emergency Mechanic</option>
+        <option value="brake">Brake Service</option>
+        <option value="inspection">Vehicle Inspection</option>
       </select>
 
-      <label for="date">Preferred Date:</label>
-      <input type="date" id="date" required />
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
 
-      <label for="location">Location:</label>
-      <input type="text" id="location" required />
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required>
 
       <button type="submit">Book Now</button>
     </form>
-
-    <div id="confirmation" style="display: none;">
-      <h3>✅ Booking Confirmed!</h3>
-      <p>We will contact you shortly.</p>
-    </div>
   </main>
 
-  <script src="js/script.js"></script>
+  <footer>
+    <p>&copy; 2025 Car Service Booking. All rights reserved.</p>
+  </footer>
 </body>
 </html>

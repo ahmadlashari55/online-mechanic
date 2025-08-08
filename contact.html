@@ -1,76 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | Online Mechanic Booking Service</title>
-<meta name="description" content="Have questions or feedback? Contact our mechanic support team for any help.">
-
-  <meta name="keywords" content="mechanic service, car repair, bike repair, online booking, emergency mechanic, Pakistan">
-  <meta name="author" content="Sukoon Mechanics">
-
-  <!-- Social Media Preview -->
-  <meta property="og:title" content="Online Mechanic Service | Book Car or Bike Repair">
-  <meta property="og:description" content="Book trusted mechanics for car and bike repairs at your doorstep.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourwebsite.netlify.app">
-  <meta property="og:image" content="https://yourwebsite.netlify.app/images/preview.jpg">
-
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Online Mechanic for car repair and maintenance bookings or inquiries.">
+    <meta name="keywords" content="Contact mechanic, Car service contact, Book mechanic, Car repair help">
+    <meta name="author" content="Online Mechanic">
+    <title>Contact Us - Online Mechanic</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-  <h1 data-en="Online Mechanic Booking" >Online Mechanic Booking</h1>
-  <nav>
-    <a href="index.html" data-en="Home" >Home</a>
-    <a href="services.html" data-en="Services" >Services</a>
-    <a href="book.html" data-en="Book Now" >Book Now</a>
-    <a href="mechanics.html" data-en="Mechanics" >Mechanics</a>
-    <a href="contact.html" data-en="Contact" >Contact</a>
-  </nav>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="book.html">Book Now</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>We’re here to help</h2>
+        <p>Fill out the form below or reach us directly for quick assistance.</p>
 
-  <!-- 🔍 Search Bar -->
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search services..." />
-    <button onclick="searchContent()">🔍</button>
-  </div>
-</header>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-  <main>
-    <h2>We’d love to hear from you!</h2>
-    <form id="contactForm">
-      <label for="username">Your Name:</label>
-      <input type="text" id="username" required />
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-      <label for="useremail">Email Address:</label>
-      <input type="email" id="useremail" required />
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-      <label for="usermessage">Message:</label>
-      <textarea id="usermessage" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
 
-      <button type="submit">Send Message</button>
-    </form>
-
-    <div id="contactConfirmation" style="display: none;">
-      <h3>📨 Message Sent!</h3>
-      <p>We’ll respond to your query soon.</p>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Online Mechanic. All rights reserved.</p>
-  </footer>
-
-  <script>
-    const contactForm = document.getElementById("contactForm");
-    const confirmation = document.getElementById("contactConfirmation");
-
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      confirmation.style.display = "block";
-      contactForm.reset();
-    });
-  </script>
+        <h3>Other Contact Details:</h3>
+        <p>📞 Phone: +92 300 1234567</p>
+        <p>📧 Email: support@onlinemechanic.com</p>
+        <p>📍 Address: Main Street, Karachi, Pakistan</p>
+    </main>
+    <footer>
+        <p>© 2025 Online Mechanic. All rights reserved.</p>
+    </footer>
 </body>
 </html>
