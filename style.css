@@ -138,3 +138,97 @@ footer {
         font-size: 2rem;
     }
 }
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+.main-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.main-header .logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.main-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.main-header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.main-header nav ul li a.active,
+.main-header nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80')
+              center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  background: #007BFF;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #0056b3;
+}
+
+/* Intro Section */
+.intro {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem 0;
+}
